@@ -61,6 +61,11 @@ def preprocess_data(auction_df, player_df, points_df):
         
         # Keep only necessary columns
         auction_df = auction_df[['Player', 'Team', 'Role', 'Price', 'status']].copy()
+        auction_df['Player'] = auction_df['Player'].astype(str).str.strip()
+        auction_df['Team'] = auction_df['Team'].astype(str).str.strip()
+        auction_df['status'] = auction_df['status'].astype(str).str.strip().str.upper()
+        # Convert price from lacs to crores, since CSV uses lacs
+        auction_df['Price'] = pd.to_numeric(auction_df['Price'], errors='coerce') / 100
         
         # Add Year column for consistency
         auction_df['Year'] = 2023
@@ -69,6 +74,17 @@ def preprocess_data(auction_df, player_df, points_df):
         st.write("🔧 Preprocessing player statistics...")
         player_df = player_df.copy()
         player_df.columns = player_df.columns.str.strip().str.lower()
+
+        # Clean points table
+        if points_df is not None:
+            points_df = points_df.copy()
+            points_df.columns = points_df.columns.str.strip().str.lower()
+            if 'team' in points_df.columns:
+                points_df['team'] = points_df['team'].astype(str).str.strip()
+            if 'year' in points_df.columns:
+                points_df['year'] = pd.to_numeric(points_df['year'], errors='coerce')
+            if 'points' in points_df.columns:
+                points_df['points'] = pd.to_numeric(points_df['points'], errors='coerce')
         
         # Create explicit rename mapping based on actual column names in cricket_data.csv
         rename_cols_player = {
@@ -168,6 +184,10 @@ df, points_df = preprocess_data(auction_df, player_df, points_df)
 if df is None:
     st.stop()
 
+sold_df = df[df['status'] == 'SOLD'].copy()
+if sold_df.empty:
+    st.warning("No sold players found in the dataset. The dashboard will still load using all uploaded auction players.")
+
 st.success("✅ Data loaded successfully!")
 
 # Sidebar navigation
@@ -190,11 +210,15 @@ if page == "🎯 Player ROI Analysis":
     
     col1, col2 = st.columns(2)
     with col1:
-        team_filter = st.selectbox("Select Team", ["All"] + sorted(df['Team'].unique()))
+        team_filter = st.selectbox("Select Team", ["All"] + sorted(sold_df['Team'].unique()), key='team_filter')
     with col2:
-        player_filter = st.selectbox("Select Player", ["All"] + sorted(df['Player'].unique()))
+        if team_filter == "All":
+            player_options = ["All"] + sorted(sold_df['Player'].unique())
+        else:
+            player_options = ["All"] + sorted(sold_df.loc[sold_df['Team'] == team_filter, 'Player'].unique())
+        player_filter = st.selectbox("Select Player", player_options, key='player_filter')
     
-    filtered_df = df.copy()
+    filtered_df = sold_df.copy()
     if team_filter != "All":
         filtered_df = filtered_df[filtered_df['Team'] == team_filter]
     if player_filter != "All":
@@ -213,11 +237,11 @@ if page == "🎯 Player ROI Analysis":
             st.metric("Player Count", player_count)
     
     st.subheader("🏆 Top 10 Players by ROI")
-    top10 = df.nlargest(10, 'ROI')[['Player', 'Team', 'Role', 'Price', 'ROI']]
+    top10 = sold_df.nlargest(10, 'ROI')[['Player', 'Team', 'Role', 'Price', 'ROI']]
     st.dataframe(top10, use_container_width=True)
     
     fig, ax = plt.subplots(figsize=(12, 6))
-    top10_plot = df.nlargest(10, 'ROI')
+    top10_plot = sold_df.nlargest(10, 'ROI')
     sns.barplot(data=top10_plot, y='Player', x='ROI', ax=ax, palette='viridis')
     ax.set_title("Top 10 Players by ROI", fontsize=14, fontweight='bold')
     ax.set_xlabel("ROI Score")
@@ -228,39 +252,120 @@ elif page == "💼 Team Strategy Breakdown":
     st.header("💼 Team Strategy Breakdown")
     st.markdown("Analyze how teams distributed their auction budget across player roles")
     
-    st.subheader("💰 Budget Distribution by Role")
+    team_selected = st.selectbox("Filter by Team:", ["All"] + sorted(sold_df['Team'].unique()), key='team_roi')
+    if team_selected == "All":
+        display_df = sold_df
+    else:
+        display_df = sold_df[sold_df['Team'] == team_selected]
+    
+    st.subheader(f"💰 Budget Distribution by Role ({team_selected})")
     col1, col2 = st.columns(2)
     
     with col1:
         fig, ax = plt.subplots(figsize=(8, 8))
-        role_budget = df.groupby('Role')['Price'].sum()
-        colors = plt.cm.Set3(np.linspace(0, 1, len(role_budget)))
-        ax.pie(role_budget, labels=role_budget.index, autopct='%1.1f%%', colors=colors, startangle=90)
-        ax.set_title("Total Budget by Role", fontsize=12, fontweight='bold')
-        st.pyplot(fig)
+        role_budget = display_df.groupby('Role')['Price'].sum()
+        if not role_budget.empty:
+            colors = plt.cm.Set3(np.linspace(0, 1, len(role_budget)))
+            ax.pie(role_budget, labels=role_budget.index, autopct='%1.1f%%', colors=colors, startangle=90)
+            ax.set_title("Total Budget by Role", fontsize=12, fontweight='bold')
+            st.pyplot(fig)
+        else:
+            st.info("No sold players found for this team.")
     
     with col2:
-        fig, ax = plt.subplots(figsize=(8, 6))
-        role_stats = df.groupby('Role')['Price'].agg(['sum', 'count', 'mean'])
-        role_stats.columns = ['Total Budget (₹ Cr)', 'Player Count', 'Avg Price (₹ Cr)']
-        st.dataframe(role_stats, use_container_width=True)
+        if not display_df.empty:
+            fig, ax = plt.subplots(figsize=(8, 6))
+            role_stats = display_df.groupby('Role')['Price'].agg(['sum', 'count', 'mean'])
+            role_stats.columns = ['Total Budget (₹ Cr)', 'Player Count', 'Avg Price (₹ Cr)']
+            st.dataframe(role_stats, use_container_width=True)
+        else:
+            st.info("No sold players available for this team.")
     
-    st.subheader("📊 Spending Histogram by Role")
-    fig, ax = plt.subplots(figsize=(12, 6))
-    sns.histplot(data=df, x='Price', hue='Role', ax=ax, multiple="stack", bins=20)
-    ax.set_title("Price Distribution by Role", fontsize=12, fontweight='bold')
-    ax.set_xlabel("Price (₹ Cr)")
-    st.pyplot(fig)
-    
-    st.subheader("👥 Players with ROI Analysis")
-    team_selected = st.selectbox("Filter by Team:", ["All"] + sorted(df['Team'].unique()), key='team_roi')
-    if team_selected == "All":
-        display_df = df
+    st.subheader("📊 Price Distribution by Role")
+    if not display_df.empty:
+        fig, ax = plt.subplots(figsize=(12, 6))
+        sns.histplot(data=display_df, x='Price', hue='Role', ax=ax, multiple="stack", bins=20)
+        ax.set_title("Price Distribution by Role", fontsize=12, fontweight='bold')
+        ax.set_xlabel("Price (₹ Cr)")
+        st.pyplot(fig)
     else:
-        display_df = df[df['Team'] == team_selected]
+        st.info("No price distribution available for this team.")
     
-    st.dataframe(display_df[['Player', 'Team', 'Role', 'Price', 'Runs', 'Wickets', 'ROI']].sort_values('ROI', ascending=False), 
-                 use_container_width=True)
+    st.subheader("📊 Batting / Bowling / Allrounder Spending")
+    if not display_df.empty:
+        role_category = display_df['Role'].replace({
+            'Batter': 'Batting',
+            'Wk-Batter': 'Batting',
+            'Bowler': 'Bowling'
+        }).fillna('Allrounder')
+        display_df = display_df.assign(Role_Category=role_category)
+        category_budget = display_df.groupby('Role_Category')['Price'].sum().reset_index()
+        category_budget = category_budget.set_index('Role_Category').reindex(['Batting', 'Bowling', 'Allrounder']).fillna(0).reset_index()
+
+        fig, ax = plt.subplots(figsize=(10, 6))
+        sns.barplot(data=category_budget, x='Role_Category', y='Price', palette=['#4c72b0', '#dd8452', '#55a868'], ax=ax)
+        ax.set_title(f"{team_selected} Spending by Category", fontsize=12, fontweight='bold')
+        ax.set_xlabel("Category")
+        ax.set_ylabel("Total Budget (₹ Cr)")
+        st.pyplot(fig)
+    else:
+        st.info("No category spending data available for this team.")
+
+    st.subheader("📊 Team Spending Comparison Across All Teams")
+    spending_df = sold_df.copy()
+    spending_df['Role_Category'] = spending_df['Role'].replace({
+        'Batter': 'Batting',
+        'Wk-Batter': 'Batting',
+        'Bowler': 'Bowling'
+    }).fillna('Allrounder')
+    team_spend = spending_df.groupby(['Team', 'Role_Category'])['Price'].sum().reset_index()
+    team_spend = team_spend.pivot(index='Team', columns='Role_Category', values='Price').fillna(0)
+    for col in ['Batting', 'Bowling', 'Allrounder']:
+        if col not in team_spend.columns:
+            team_spend[col] = 0
+    team_spend = team_spend[['Batting', 'Bowling', 'Allrounder']].sort_index()
+
+    if not team_spend.empty:
+        fig, ax = plt.subplots(figsize=(16, 8))
+        team_spend.plot(kind='bar', ax=ax, width=0.8)
+        ax.set_title("Team Spending by Batting, Bowling, and Allrounder", fontsize=14, fontweight='bold')
+        ax.set_xlabel("Team")
+        ax.set_ylabel("Total Budget (₹ Cr)")
+        ax.legend(title='Category')
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right')
+        st.pyplot(fig)
+    else:
+        st.info("No team spending comparison data available.")
+
+    st.subheader("📊 Team Points vs Total Spending")
+    if points_df is not None and 'year' in points_df.columns and 'points' in points_df.columns:
+        latest_year = int(points_df['year'].dropna().max())
+        points_latest = points_df[points_df['year'] == latest_year][['team', 'points']].dropna()
+        points_latest['team'] = points_latest['team'].astype(str).str.strip()
+        total_spend = sold_df.groupby('Team')['Price'].sum().reset_index()
+        team_compare = pd.merge(total_spend, points_latest, left_on='Team', right_on='team', how='inner')
+        if not team_compare.empty:
+            team_compare = team_compare.sort_values('points', ascending=False)
+            fig, ax = plt.subplots(figsize=(14, 7))
+            sns.barplot(data=team_compare, x='Team', y='Price', color='#4c72b0', ax=ax)
+            ax2 = ax.twinx()
+            sns.lineplot(data=team_compare, x='Team', y='points', marker='o', sort=False, color='#dd8452', ax=ax2)
+            ax.set_title(f"Total Team Spending vs {latest_year} Points", fontsize=14, fontweight='bold')
+            ax.set_xlabel("Team")
+            ax.set_ylabel("Total Spending (₹ Cr)")
+            ax2.set_ylabel("Points")
+            ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right')
+            st.pyplot(fig)
+        else:
+            st.info("No points data available for the latest year.")
+    else:
+        st.info("Points data is not available for comparison.")
+
+    st.subheader("👥 Players with ROI Analysis")
+    if not display_df.empty:
+        st.dataframe(display_df[['Player', 'Team', 'Role', 'Price', 'Runs', 'Wickets', 'ROI']].sort_values('ROI', ascending=False), use_container_width=True)
+    else:
+        st.info("No players available for this team.")
 
 # Uncapped Gems
 elif page == "💎 Uncapped Gems":
@@ -441,6 +546,18 @@ elif page == "📋 Data Overview":
         st.metric("Total Budget (₹ Cr)", f"{df['Price'].sum():.1f}")
     with col4:
         st.metric("Avg Player Price (₹ Cr)", f"{df['Price'].mean():.2f}")
+
+    sold_only = df[df['status'] == 'SOLD']
+    unsold_only = df[df['status'] != 'SOLD']
+    col5, col6, col7 = st.columns(3)
+    with col5:
+        st.metric("Sold Players", len(sold_only))
+    with col6:
+        avg_sold_price = sold_only['Price'].mean() if len(sold_only) > 0 else 0
+        st.metric("Avg Sold Price (₹ Cr)", f"{avg_sold_price:.2f}")
+    with col7:
+        avg_unsold_price = unsold_only['Price'].mean() if len(unsold_only) > 0 else 0
+        st.metric("Avg Unsold Price (₹ Cr)", f"{avg_unsold_price:.2f}")
     
     st.subheader("📊 Summary Statistics")
     summary_stats = df[['Price', 'ROI', 'Runs', 'Wickets']].describe()
