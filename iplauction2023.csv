@@ -1,0 +1,310 @@
+,name,player style,nationality,base price (in lacs),final price (in lacs),franchise,status
+0,Harshit Rana,Bowler,India,20.0,20.0,KKR,RETAINED
+1,Ekant Sen,Batter,India,20.0,150.0,CSK,UNSOLD
+2,Wayne Parnell,Allrounder,South Africa,75.0,150.0,CSK,UNSOLD
+3,Shakib Al Hasan,Allrounder,Bangladesh,150.0,150.0,KKR,SOLD
+4,Joe Root,Batter,England,100.0,100.0,RR,SOLD
+5,Abdul Basith,Allrounder,India,20.0,20.0,RR,SOLD
+6,Prashant Chopra,Allrounder,India,20.0,150.0,CSK,UNSOLD
+7,Akeal Hosein,Bowler,West Indies,100.0,100.0,SRH,SOLD
+8,Raghav Goyal,Bowler,India,20.0,20.0,MI,SOLD
+9,Yudhvir Singh Charak,Allrounder,India,20.0,20.0,LSG,SOLD
+10,Luke Wood,Bowler,England,100.0,150.0,CSK,UNSOLD
+11,Dilshan Madushanka,Bowler,Sri Lanka,50.0,150.0,CSK,UNSOLD
+12,Naveen-ul-Haq,Allrounder,Afghanistan,50.0,50.0,LSG,SOLD
+13,Akash Singh,Bowler,India,20.0,150.0,CSK,UNSOLD
+14,Akash Vashist,Allrounder,India,20.0,20.0,RR,SOLD
+15,Suryansh Shedge,Allrounder,India,20.0,150.0,CSK,UNSOLD
+16,Johnson Charles,WK-Batter,West Indies,50.0,150.0,CSK,UNSOLD
+17,Rassie van der Dussen,Batter,South Africa,200.0,150.0,CSK,UNSOLD
+18,Mandeep Singh,Batter,India,50.0,50.0,KKR,SOLD
+19,Murugan Ashwin,Bowler,India,20.0,20.0,RR,SOLD
+20,KM Asif,Bowler,India,30.0,30.0,RR,SOLD
+21,Dinesh Bana,WK-Batter,India,20.0,150.0,CSK,UNSOLD
+22,Anmolpreet Singh,Batter,India,20.0,20.0,SRH,SOLD
+23,Adam Zampa,Bowler,Australia,150.0,150.0,RR,SOLD
+24,Kusal Mendis,WK-Batter,Sri Lanka,50.0,150.0,CSK,UNSOLD
+25,Litton Das,WK-Batter,Bangladesh,50.0,50.0,KKR,SOLD
+26,Rilee Rossouw,Batter,South Africa,200.0,460.0,DC,SOLD
+27,Shivam Singh,Allrounder,India,20.0,20.0,PBKS,SOLD
+28,Mohit Rathee,Allrounder,India,20.0,20.0,PBKS,SOLD
+29,Bhagath Varma,Allrounder,India,20.0,20.0,CSK,SOLD
+30,Nehal Wadhera,Allrounder,India,20.0,20.0,MI,SOLD
+31,Shubhang Hegde,Allrounder,India,20.0,150.0,CSK,UNSOLD
+32,Sonu Yadav,Allrounder,India,20.0,20.0,RCB,SOLD
+33,Deepesh Nainwal,Allrounder,India,20.0,150.0,CSK,UNSOLD
+34,Trilok Nag,Bowler,India,20.0,150.0,CSK,UNSOLD
+35,Shubham Kapse,Bowler,India,20.0,150.0,CSK,UNSOLD
+36,Utkarsh Singh,Allrounder,India,20.0,150.0,CSK,UNSOLD
+37,Jitender Pal,Allrounder,India,20.0,150.0,CSK,UNSOLD
+38,Kunal Singh Rathore,WK-Batter,India,20.0,20.0,RR,SOLD
+39,Ajay Jadav Mandal,Allrounder,India,20.0,20.0,CSK,SOLD
+40,Kulwant Khejroliya,Bowler,India,20.0,20.0,KKR,SOLD
+41,Balu Surya,Allrounder,India,20.0,150.0,CSK,UNSOLD
+42,Sanjay Raghunath,Batter,India,20.0,150.0,CSK,UNSOLD
+43,Priyank Panchal,Batter,India,20.0,150.0,CSK,UNSOLD
+44,Varun Aaron,Allrounder,India,50.0,150.0,CSK,UNSOLD
+45,Tom Curran,Allrounder,England,75.0,150.0,CSK,UNSOLD
+46,Rehan Ahmed,Allrounder,England,50.0,150.0,CSK,UNSOLD
+47,Avinash Singh,Bowler,India,20.0,60.0,RCB,SOLD
+48,Nitish Reddy,WK-Batter,India,20.0,20.0,SRH,SOLD
+49,G Ajitesh,WK-Batter,India,20.0,150.0,CSK,UNSOLD
+50,Sanjay Yadav,Allrounder,India,20.0,150.0,CSK,UNSOLD
+51,David Wiese,Allrounder,Namibia,100.0,100.0,KKR,SOLD
+52,Sumeet Verma,Allrounder,India,20.0,150.0,CSK,UNSOLD
+53,Swapnil Singh,Allrounder,India,20.0,20.0,LSG,SOLD
+54,Shams Mulani,Allrounder,India,20.0,20.0,MI,SOLD
+55,Himanshu Bisht,Allrounder,India,20.0,150.0,CSK,UNSOLD
+56,Mohit Sharma,Bowler,India,50.0,50.0,GT,SOLD
+57,Joshua Little,Bowler,Ireland,50.0,440.00000000000006,GT,SOLD
+58,Richard Gleeson,Bowler,England,50.0,150.0,CSK,UNSOLD
+59,Jamie Overton,Allrounder,England,200.0,150.0,CSK,UNSOLD
+60,Suyash Sharma,Bowler,India,20.0,20.0,KKR,SOLD
+61,Yuvraj Chudasama,Bowler,India,20.0,150.0,CSK,UNSOLD
+62,Tejas Baroka,Bowler,India,20.0,150.0,CSK,UNSOLD
+63,Paul van Meekeren,Bowler,Netherlands,20.0,150.0,CSK,UNSOLD
+64,Rajan Kumar,Bowler,India,20.0,70.0,RCB,SOLD
+65,Vidhwath Kaverappa,Bowler,India,20.0,20.0,PBKS,SOLD
+66,Vishnu Vinod,WK-Batter,India,20.0,20.0,MI,SOLD
+67,Karan Shinde,WK-Batter,India,20.0,150.0,CSK,UNSOLD
+68,Urvil Patel,WK-Batter,India,20.0,20.0,GT,SOLD
+69,Baba Indrajith,WK-Batter,India,20.0,150.0,CSK,UNSOLD
+70,Donavon Ferreira,WK-Batter,South Africa,20.0,50.0,RR,SOLD
+71,Jagadeesha Suchith,Allrounder,India,20.0,150.0,CSK,UNSOLD
+72,Prerak Mankad,Allrounder,India,20.0,20.0,LSG,SOLD
+73,Duan Jansen,Allrounder,South Africa,20.0,20.0,MI,SOLD
+74,Mayank Dagar,Allrounder,India,20.0,180.0,SRH,SOLD
+75,Manoj Bhandage,Allrounder,India,20.0,20.0,RCB,SOLD
+76,Will Smeed,Batter,England,20.0,150.0,CSK,UNSOLD
+77,Harpreet Singh Bhatia,Batter,India,20.0,40.0,PBKS,SOLD
+78,Piyush Chawla,Bowler,India,50.0,50.0,MI,SOLD
+79,Amit Mishra,Bowler,India,50.0,50.0,LSG,SOLD
+80,Kyle Jamieson,Allrounder,New Zealand,100.0,100.0,CSK,SOLD
+81,Blessing Muzarabani,Bowler,Zimbabwe,50.0,150.0,CSK,UNSOLD
+82,Dushmantha Chameera,Bowler,Sri Lanka,50.0,150.0,CSK,UNSOLD
+83,Taskin Ahmed,Bowler,Bangladesh,50.0,150.0,CSK,UNSOLD
+84,Sandeep Sharma,Bowler,India,50.0,150.0,CSK,UNSOLD
+85,Riley Meredith,Bowler,Australia,150.0,150.0,CSK,UNSOLD
+86,Dasun Shanaka,Allrounder,Sri Lanka,50.0,150.0,CSK,UNSOLD
+87,James Neesham,Allrounder,New Zealand,200.0,150.0,CSK,UNSOLD
+88,Mohammad Nabi,Allrounder,Afghanistan,100.0,150.0,CSK,UNSOLD
+89,Daniel Sams,Allrounder,Australia,75.0,75.0,LSG,SOLD
+90,Daryl Mitchell,Allrounder,New Zealand,100.0,150.0,CSK,UNSOLD
+91,Romario Shepherd,Bowler,West Indies,50.0,50.0,LSG,SOLD
+92,Dawid Malan,Batter,England,150.0,150.0,CSK,UNSOLD
+93,Travis Head,Allrounder,Australia,200.0,150.0,CSK,UNSOLD
+94,Will Jacks,Allrounder,England,150.0,320.0,RCB,SOLD
+95,Sherfane Rutherford,Allrounder,West Indies,150.0,150.0,CSK,UNSOLD
+96,Manish Pandey,Batter,India,100.0,240.0,DC,SOLD
+97,Paul Stirling,Allrounder,Ireland,50.0,150.0,CSK,UNSOLD
+98,Himanshu Sharma,Bowler,India,20.0,20.0,RCB,SOLD
+99,Sudhesan Midhun,Bowler,India,20.0,150.0,CSK,UNSOLD
+100,Shreyas Gopal,Bowler,India,20.0,150.0,CSK,UNSOLD
+101,Izharulhaq Naveed,Bowler,Afghanistan,20.0,150.0,CSK,UNSOLD
+102,Chintal Gandhi,Bowler,India,20.0,150.0,CSK,UNSOLD
+103,Mukesh Kumar,Bowler,India,20.0,550.0,DC,SOLD
+104,Shivam Mavi,Bowler,India,40.0,600.0,GT,SOLD
+105,N Jagadeesan,WK-Batter,India,20.0,90.0,KKR,SOLD
+106,Lance Morris,Bowler,Australia,30.0,150.0,CSK,UNSOLD
+107,Mujtaba Yousuf,Bowler,India,20.0,150.0,CSK,UNSOLD
+108,Yash Thakur,Bowler,India,20.0,45.0,LSG,SOLD
+109,Vaibhav Arora,Allrounder,India,20.0,60.0,KKR,SOLD
+110,Mohammed Azharuddeen,WK-Batter,India,20.0,150.0,CSK,UNSOLD
+111,Upendra Yadav,WK-Batter,India,20.0,25.0,SRH,SOLD
+112,Srikar Bharat,WK-Batter,India,20.0,120.0,GT,SOLD
+113,Sanvir Singh,Allrounder,India,20.0,20.0,SRH,SOLD
+114,Sumit Kumar,WK-Batter,India,20.0,150.0,CSK,UNSOLD
+115,Shashank Singh,Allrounder,India,20.0,150.0,CSK,UNSOLD
+116,Nishant Sindhu,Allrounder,India,20.0,60.0,CSK,SOLD
+117,Abhimanyu Easwaran,WK-Batter,India,20.0,150.0,CSK,UNSOLD
+118,Corbin Bosch,Allrounder,South Africa,20.0,150.0,CSK,UNSOLD
+119,Saurabh Kumar,Allrounder,India,20.0,150.0,CSK,UNSOLD
+120,Samarth Vyas,Allrounder,India,20.0,20.0,SRH,SOLD
+121,Priyam Garg,Batter,India,20.0,150.0,CSK,UNSOLD
+122,Vivrant Sharma,Allrounder,India,20.0,260.0,SRH,SOLD
+123,Himmat Singh,Batter,India,20.0,150.0,CSK,UNSOLD
+124,Shaik Rasheed,Batter,India,20.0,20.0,CSK,SOLD
+125,Rohan Kunnummal,Batter,India,20.0,150.0,CSK,UNSOLD
+126,Shubham Khajuria,Batter,India,20.0,150.0,CSK,UNSOLD
+127,Odean Smith,Allrounder,West Indies,50.0,50.0,GT,SOLD
+128,LR Chethan,Batter,India,20.0,150.0,CSK,UNSOLD
+129,Kane Williamson,Batter,New Zealand,200.0,200.0,GT,SOLD
+130,Ajinkya Rahane,Batter,India,50.0,50.0,CSK,SOLD
+131,Mayank Agarwal,Batter,India,100.0,825.0,SRH,SOLD
+132,Jason Holder,Allrounder,West Indies,200.0,575.0,RR,SOLD
+133,Ishant Sharma,Bowler,India,50.0,50.0,DC,SOLD
+134,Jaydev Unadkat,Bowler,India,50.0,50.0,LSG,SOLD
+135,Mayank Markande,Bowler,India,50.0,50.0,SRH,SOLD
+136,Nicholas Pooran,WK-Batter,West Indies,200.0,1600.0,LSG,SOLD
+137,Mujeeb Ur Rahman,Bowler,Afghanistan,100.0,150.0,CSK,UNSOLD
+138,Tabraiz Shamsi,Bowler,South Africa,100.0,150.0,CSK,UNSOLD
+139,Adil Rashid,Bowler,England,200.0,200.0,SRH,SOLD
+140,Jhye Richardson,Bowler,Australia,150.0,150.0,MI,SOLD
+141,Adam Milne,Bowler,New Zealand,200.0,150.0,CSK,UNSOLD
+142,Reece Topley,Bowler,England,75.0,190.0,RCB,SOLD
+143,Chris Jordan,Bowler,England,200.0,150.0,CSK,UNSOLD
+144,Philip Salt,Batter,England,200.0,200.0,DC,SOLD
+145,Tom Banton,WK-Batter,England,200.0,150.0,CSK,UNSOLD
+146,Heinrich Klaasen,WK-Batter,South Africa,100.0,525.0,SRH,SOLD
+147,Ben Stokes,Allrounder,England,200.0,1625.0,CSK,SOLD
+148,Cameron Green,Allrounder,Australia,200.0,1750.0,MI,SOLD
+149,Sikandar Raza,Allrounder,Zimbabwe,50.0,50.0,PBKS,SOLD
+150,Sam Curran,Allrounder,England,200.0,1850.0,PBKS,SOLD
+151,Harry Brook,Batter,England,150.0,1325.0,SRH,SOLD
+152,Rajat Patidar,Batter,India,20.0,20.0,RCB,RETAINED
+153,Matheesha Pathirana,Bowler,Sri Lanka,20.0,20.0,CSK,RETAINED
+154,Tristan Stubbs,WK-Batter,South Africa,20.0,20.0,MI,RETAINED
+155,Ravi Bishnoi,Bowler,India,20.0,400.0,LSG,RETAINED
+156,Yash Dhull,Batter,India,20.0,50.0,DC,RETAINED
+157,Akash Madhwal,Bowler,India,20.0,20.0,MI,RETAINED
+158,Kumar Kartikeya,Allrounder,India,20.0,20.0,MI,RETAINED
+159,Shahbaz Ahmed,Allrounder,India,20.0,240.0,RCB,RETAINED
+160,Rahul Tripathi,Batter,India,20.0,850.0,SRH,RETAINED
+161,Abhinav Manohar Sadarangani,Batter,India,20.0,260.0,GT,RETAINED
+162,Harpreet Brar,Bowler,India,20.0,380.0,PBKS,RETAINED
+163,Dewald Brevis,Batter,South Africa,20.0,300.0,MI,RETAINED
+164,Deepak Hooda,Allrounder,India,20.0,575.0,LSG,RETAINED
+165,Dhruv Jurel,WK-Batter,India,20.0,20.0,RR,RETAINED
+166,Mukesh Choudhary,Bowler,India,20.0,20.0,CSK,RETAINED
+167,Tim David,Allrounder,Singapore,20.0,825.0,MI,RETAINED
+168,Atharva Taide,Allrounder,India,20.0,20.0,PBKS,RETAINED
+169,Praveen Dubey,Bowler,India,20.0,50.0,DC,RETAINED
+170,Sai Sudharsan,Batter,India,20.0,20.0,GT,RETAINED
+171,Sarfaraz Khan,Batter,India,20.0,20.0,DC,RETAINED
+172,Kuldeep Yadav,Bowler,India,20.0,200.0,DC,RETAINED
+173,Subhranshu Senapati,Batter,India,20.0,20.0,CSK,RETAINED
+174,Obed McCoy,Bowler,West Indies,20.0,75.0,RR,RETAINED
+175,Siddarth Kaul,Bowler,India,20.0,75.0,RCB,RETAINED
+176,Fazalhaq Farooqi,Bowler,Afghanistan,20.0,50.0,SRH,RETAINED
+177,Shahrukh Khan,Batter,India,20.0,900.0,PBKS,RETAINED
+178,Kamlesh Nagarkoti,Bowler,India,20.0,110.0,DC,RETAINED
+179,Riyan Parag,Allrounder,India,20.0,380.0,RR,RETAINED
+180,Abhishek Sharma,Allrounder,India,20.0,650.0,SRH,RETAINED
+181,Rahul Tewatia,Allrounder,India,20.0,900.0,GT,RETAINED
+182,Anuj Rawat,WK-Batter,India,20.0,340.0,RCB,RETAINED
+183,Rahul Chahar,Bowler,India,20.0,525.0,PBKS,RETAINED
+184,Yuzvendra Chahal,Bowler,India,20.0,650.0,RR,RETAINED
+185,Umesh Yadav,Bowler,India,20.0,200.0,KKR,RETAINED
+186,Mark Wood,Bowler,England,20.0,750.0,LSG,RETAINED
+187,Jitesh Sharma,WK-Batter,India,20.0,20.0,PBKS,RETAINED
+188,Nathan Ellis,Bowler,Australia,20.0,75.0,PBKS,RETAINED
+189,Prabhsimran Singh,WK-Batter,India,20.0,60.0,PBKS,RETAINED
+190,Ramandeep Singh,Batter,India,20.0,20.0,MI,RETAINED
+191,Mustafizur Rahman,Bowler,Bangladesh,20.0,200.0,DC,RETAINED
+192,Suyash Prabhudessai,Batter,India,20.0,30.0,RCB,RETAINED
+193,Tushar Deshpande,Bowler,India,20.0,20.0,CSK,RETAINED
+194,Avesh Khan,Bowler,India,20.0,1000.0,LSG,RETAINED
+195,Ravisrinivasan Sai Kishore,Bowler,India,20.0,300.0,GT,RETAINED
+196,Glenn Phillips,WK-Batter,New Zealand,20.0,150.0,SRH,RETAINED
+197,Mitchell Santner,Allrounder,New Zealand,20.0,190.0,CSK,RETAINED
+198,Ayush Badoni,Allrounder,India,20.0,20.0,LSG,RETAINED
+199,Rishi Dhawan,Allrounder,India,20.0,55.0,PBKS,RETAINED
+200,Tim Southee,Bowler,New Zealand,20.0,150.0,KKR,RETAINED
+201,Jofra Archer,Bowler,England,20.0,800.0,MI,RETAINED
+202,Alzarri Joseph,Bowler,West Indies,20.0,240.0,GT,RETAINED
+203,Rovman Powell,Batter,West Indies,20.0,280.0,DC,RETAINED
+204,Bhanuka Rajapaksa,Batter,Sri Lanka,20.0,50.0,PBKS,RETAINED
+205,Devon Conway,Batter,New Zealand,20.0,100.0,CSK,RETAINED
+206,Prashant Solanki,Bowler,India,20.0,120.0,CSK,RETAINED
+207,Finn Allen,WK-Batter,New Zealand,20.0,80.0,RCB,RETAINED
+208,Mayank Yadav,Bowler,India,20.0,20.0,LSG,RETAINED
+209,Pradeep Sangwan,Bowler,India,20.0,20.0,GT,RETAINED
+210,Mohsin Khan,Bowler,India,20.0,20.0,LSG,RETAINED
+211,Simarjeet Singh,Bowler,India,20.0,20.0,CSK,RETAINED
+212,T Natarajan,Bowler,India,20.0,400.0,SRH,RETAINED
+213,Kuldeep Sen,Bowler,India,20.0,20.0,RR,RETAINED
+214,Kartik Tyagi,Bowler,India,20.0,400.0,SRH,RETAINED
+215,Bhuvneshwar Kumar,Bowler,India,20.0,420.0,SRH,RETAINED
+216,Prasidh Krishna,Bowler,India,20.0,1000.0,RR,RETAINED
+217,Noor Ahmad,Bowler,Afghanistan,20.0,30.0,GT,RETAINED
+218,Josh Hazlewood,Bowler,Australia,20.0,775.0,RCB,RETAINED
+219,Yash Dayal,Bowler,India,20.0,320.0,GT,RETAINED
+220,KC Cariappa,Bowler,India,20.0,30.0,RR,RETAINED
+221,Tilak Varma,Batter,India,20.0,170.0,MI,RETAINED
+222,Anukul Roy,Allrounder,India,20.0,20.0,KKR,RETAINED
+223,Deepak Chahar,Bowler,India,20.0,1400.0,CSK,RETAINED
+224,Ripal Patel,Allrounder,India,20.0,20.0,DC,RETAINED
+225,Matthew Wade,WK-Batter,Australia,20.0,240.0,GT,RETAINED
+226,Wriddhiman Saha,WK-Batter,India,20.0,190.0,GT,RETAINED
+227,Vicky Ostwal,Allrounder,India,20.0,20.0,DC,RETAINED
+228,Ambati Rayudu,WK-Batter,India,20.0,675.0,CSK,RETAINED
+229,Darshan Nalkande,Bowler,India,20.0,20.0,GT,RETAINED
+230,Ishan Kishan,WK-Batter,India,20.0,1525.0,MI,RETAINED
+231,Mahipal Lomror,Allrounder,India,20.0,95.0,RCB,RETAINED
+232,Dinesh Karthik,WK-Batter,India,20.0,550.0,RCB,RETAINED
+233,Rajvardhan Hangargekar,Bowler,India,20.0,150.0,CSK,RETAINED
+234,Jonny Bairstow,WK-Batter,England,20.0,675.0,PBKS,RETAINED
+235,Washington Sundar,Allrounder,India,20.0,875.0,SRH,RETAINED
+236,Raj Bawa,Bowler,India,20.0,200.0,PBKS,RETAINED
+237,Manan Vohra,Batter,India,20.0,20.0,LSG,RETAINED
+238,Nitish Rana,Allrounder,India,20.0,800.0,KKR,RETAINED
+239,Rinku Singh,Batter,India,20.0,55.0,KKR,RETAINED
+240,Harshal Patel,Bowler,India,20.0,1075.0,RCB,RETAINED
+241,Krunal Pandya,Allrounder,India,20.0,825.0,LSG,RETAINED
+242,Maheesh Theekshana,Bowler,Sri Lanka,20.0,70.0,CSK,RETAINED
+243,Mitchell Marsh,Allrounder,Australia,20.0,650.0,DC,RETAINED
+244,Karn Sharma,Bowler,India,20.0,50.0,RCB,RETAINED
+245,Chetan Sakariya,Bowler,India,20.0,420.0,DC,RETAINED
+246,Navdeep Saini,Bowler,India,20.0,260.0,RR,RETAINED
+247,Lungi Ngidi,Bowler,South Africa,20.0,50.0,DC,RETAINED
+248,Khaleel Ahmed,Bowler,India,20.0,525.0,DC,RETAINED
+249,Jayant Yadav,Allrounder,India,20.0,170.0,GT,RETAINED
+250,Vijay Shankar,Allrounder,India,20.0,140.0,GT,RETAINED
+251,Liam Livingstone,Allrounder,England,20.0,1150.0,PBKS,RETAINED
+252,David Willey,Allrounder,England,20.0,200.0,RCB,RETAINED
+253,Marco Jansen,Allrounder,South Africa,20.0,420.0,SRH,RETAINED
+254,Krishnappa Gowtham,Allrounder,India,20.0,90.0,LSG,RETAINED
+255,Karan Sharma,Allrounder,India,20.0,20.0,LSG,RETAINED
+256,Shivam Dube,Allrounder,India,20.0,400.0,CSK,RETAINED
+257,Mohd Arshad Khan,Bowler,India,20.0,20.0,MI,RETAINED
+258,Lalit Yadav,Allrounder,India,20.0,65.0,DC,RETAINED
+259,Baltej Singh,Allrounder,India,20.0,20.0,PBKS,RETAINED
+260,Aiden Markram,Batter,South Africa,20.0,260.0,SRH,RETAINED
+261,Kyle Mayers,Allrounder,West Indies,20.0,50.0,LSG,RETAINED
+262,Arjun Tendulkar,Allrounder,India,20.0,30.0,MI,RETAINED
+263,Hrithik Shokeen,Allrounder,India,20.0,20.0,MI,RETAINED
+264,Kuldip Yadav,Bowler,India,20.0,20.0,RR,RETAINED
+265,Wanindu Hasaranga,Allrounder,Sri Lanka,20.0,1075.0,RCB,RETAINED
+266,Devdutt Padikkal,Batter,India,20.0,775.0,RR,RETAINED
+267,David Miller,Batter,South Africa,20.0,300.0,GT,RETAINED
+268,Shimron Hetmyer,Batter,West Indies,20.0,850.0,RR,RETAINED
+269,David Warner,Batter,Australia,20.0,625.0,DC,RETAINED
+270,Mohammed Shami,Bowler,India,20.0,625.0,GT,RETAINED
+271,Kagiso Rabada,Bowler,South Africa,20.0,925.0,PBKS,RETAINED
+272,Shreyas Iyer,Batter,India,20.0,1225.0,KKR,RETAINED
+273,Faf du Plessis,Batter,South Africa,20.0,700.0,RCB,RETAINED
+274,Shikhar Dhawan,Batter,India,20.0,825.0,PBKS,RETAINED
+275,Quinton de Kock,WK-Batter,South Africa,20.0,675.0,LSG,RETAINED
+276,Trent Boult,Bowler,New Zealand,20.0,800.0,RR,RETAINED
+277,Umran Malik,Bowler,India,20.0,400.0,SRH,RETAINED
+278,Abdul Samad,Allrounder,India,20.0,400.0,SRH,RETAINED
+279,Ravichandran Ashwin,Allrounder,India,20.0,500.0,RR,RETAINED
+280,Mohammed Siraj,Bowler,India,20.0,700.0,RCB,RETAINED
+281,Glenn Maxwell,Allrounder,Australia,20.0,1100.0,RCB,RETAINED
+282,Virat Kohli,Batter,India,20.0,1500.0,RCB,RETAINED
+283,Yashasvi Jaiswal,Batter,India,20.0,400.0,RR,RETAINED
+284,Jos Buttler,WK-Batter,England,20.0,1000.0,RR,RETAINED
+285,Sanju Samson,WK-Batter,India,20.0,1400.0,RR,RETAINED
+286,Arshdeep Singh,Bowler,India,20.0,400.0,PBKS,RETAINED
+287,Suryakumar Yadav,Batter,India,20.0,800.0,MI,RETAINED
+288,Jasprit Bumrah,Bowler,India,20.0,1200.0,MI,RETAINED
+289,Akash Deep,Bowler,India,20.0,20.0,RCB,RETAINED
+290,Rohit Sharma,Batter,India,20.0,1600.0,MI,RETAINED
+291,Dwaine Pretorius,Allrounder,South Africa,20.0,50.0,CSK,RETAINED
+292,KL Rahul,WK-Batter,India,20.0,1700.0,LSG,RETAINED
+293,Marcus Stoinis,Allrounder,Australia,20.0,920.0,LSG,RETAINED
+294,Sunil Narine,Allrounder,West Indies,20.0,600.0,KKR,RETAINED
+295,Venkatesh Iyer,Allrounder,India,20.0,800.0,KKR,RETAINED
+296,Ravindra Jadeja,Allrounder,India,20.0,1600.0,CSK,RETAINED
+297,Varun Chakaravarthy,Bowler,India,20.0,800.0,KKR,RETAINED
+298,Andre Russell,Allrounder,West Indies,20.0,1200.0,KKR,RETAINED
+299,Shubman Gill,Batter,India,20.0,800.0,GT,RETAINED
+300,Rashid Khan,Bowler,Afghanistan,20.0,1500.0,GT,RETAINED
+301,Hardik Pandya,Allrounder,India,20.0,1500.0,GT,RETAINED
+302,Anrich Nortje,Bowler,South Africa,20.0,650.0,DC,RETAINED
+303,Prithvi Shaw,Batter,India,20.0,750.0,DC,RETAINED
+304,MS Dhoni,WK-Batter,India,20.0,1200.0,CSK,RETAINED
+305,Moeen Ali,Allrounder,England,20.0,800.0,CSK,RETAINED
+306,Ruturaj Gaikwad,Batter,India,20.0,600.0,CSK,RETAINED
+307,Rishabh Pant,WK-Batter,India,20.0,1600.0,DC,RETAINED
+308,Axar Patel,Allrounder,India,20.0,900.0,DC,RETAINED
